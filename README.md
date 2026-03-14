@@ -219,3 +219,7 @@ Full verification details:
 Bithun Chatterjee (Golden)  
 Senior Technical Consultant, Volue
 Trondheim, Norway
+
+## License
+This project is licensed under the MIT License.
+See the LICENSE file for details.
