@@ -62,6 +62,29 @@ Full details:
 
 ---
 
+
+##  📁 Repository Structure
+
+```
+wordpress-memory-limit-incident/
+│
+├── mu-plugin/
+│   └── force-memory-limit.php
+│
+├── tests/
+│   └── memory-test.php
+│
+├── docs/
+│   ├── incident-report.md
+│   ├── root-cause-analysis.md
+│   ├── troubleshooting-steps.md
+│   ├── php-memory-incident-github-report.pdf
+│   ├── environment-details.md
+│   └── verification.md
+│
+└── README.md
+```
+
 ## 🛠️ The Solution: MU‑Plugin
 
 A custom MU-plugin was created to:
@@ -126,82 +149,71 @@ Full verification details:
 
 ## 🖼️ Screenshots (Before & After)
 
-Below are placeholders for your screenshots.
-Once you upload them to GitHub, we’ll replace these with actual image links.
 
-##  Before Fix
 
-- php-info-before
+###  Before Fix
+
+- phpinfo (via browser)
 
 <img width="922" height="183" src="screenshots\php-info-before.png" />
 
-- site-health-before.png
+- WordPress Site-health
 
 <img width="744" height="434" src="screenshots\site-health-before.png" />
 
 
 
-##  After Fix
+###  After Fix
 
-- php-info-after.png
+- phpinfo (via browser)
 
 <img width="1035" height="190" src="screenshots\php-info-after.png" />
 
-- site-health-after.png
+- WordPress Site-health
 
 <img width="796" height="432" src="screenshots\site-health-after.png" />
-
-- cloud-linux-server-override.png
-
-<img width="1072" height="655" src="screenshots\cloud-linux-server-override.png" />
 
 
 
 ##  Manual Attempts
 
-- php-override-manually.png
+- php-override-manually
 
 <img width="694" height="380" src="screenshots\php-override-manually.png" />
 
-- cPanel-php-selector-memory-override.png
+- Cloud-linux-server override
+
+<img width="1072" height="655" src="screenshots\cloud-linux-server-override.png" />
+
+- cPanel-php-selector-memory-override
 
 <img width="1090" height="1117" src="screenshots\cPanel-php-selector-memory-override.png" />
 
-- cPanel-memory-override.png
+- cPanel-memory-override
 
 <img width="1340" height="1019" src="screenshots\cPanel-memory-override.png" />
 
-- whm-memory-override-for-altphp81.png
+- whm-memory-override-for-altphp81
 
 <img width="1231" height="838" src="screenshots\whm-memory-override-for-altphp81.png" />
 
-- whm-memory-override-for-ea-php81.png
+- whm-memory-override-for-ea-php81
 
 <img width="1222" height="840" src="screenshots\whm-memory-override-for-eaphp81.png" />
 
-##  📁 Repository Structure
 
-```
-wordpress-memory-limit-incident/
-│
-├── mu-plugin/
-│   └── force-memory-limit.php
-│
-├── tests/
-│   └── memory-test.php
-│
-├── docs/
-│   ├── incident-report.md
-│   ├── root-cause-analysis.md
-│   ├── troubleshooting-steps.md
-│   ├── environment-details.md
-│   └── verification.md
-│
-└── README.md
-```
+
+
+
+
+
 
 ##  🛠️ Full technical report
 👉 See `/docs/php-memory-incident-github-report.pdf`
+
+
+<br>
+<br>
 
 ##  🧑‍💻 Author
 Bithun Chatterjee (Golden)  
