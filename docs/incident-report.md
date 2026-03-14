@@ -4,7 +4,7 @@
 A critical issue occurred where WordPress consistently reported a memory limit of 128M despite server-level configuration being set to 512M. This caused plugin failures, admin crashes, and instability across the site.
 
 ## Date of Incident
-03-MAR-2026
+`03-MAR-2026`
 
 ## Impact
 - WordPress admin pages failed to load

@@ -1,7 +1,7 @@
 # Root Cause Analysis
 
 ## Primary Root Cause
-The server was running **ALT-PHP**, which ignores local *php.ini* and .htaccess ´memory_limit´ settings. WordPress was therefore always initialized with **128M**, regardless of server configuration.
+The server was running **ALT-PHP**, which ignores local *php.ini* and .htaccess `memory_limit` settings. WordPress was therefore always initialized with **128M**, regardless of server configuration.
 
 ## Contributing Factors
 - LiteSpeed was reading memory limits from CloudLinux LVE, not php.ini
@@ -17,4 +17,4 @@ The server was running **ALT-PHP**, which ignores local *php.ini* and .htaccess 
 - Hosting control panel settings were overridden by the PHP handler
 
 ## Final Understanding
-The memory limit needed to be enforced **inside WordPress itself**, at the MU-plugin level, using late-priority hooks to override all other plugin attempts.
+The memory limit needed to be enforced **inside WordPress itself**, at the `MU-plugin` level, using late-priority hooks to override all other plugin attempts.
