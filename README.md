@@ -85,6 +85,12 @@ wordpress-memory-limit-incident/
 └── README.md
 ```
 
+
+##  📁 Architecture Diagram (in details) Structure
+
+<img width="984" height="1375" src="screenshots\architecture-diagram.png" />
+
+
 ## 🛠️ The Solution: MU‑Plugin
 
 A custom MU-plugin was created to:
@@ -203,9 +209,11 @@ Full verification details:
 
 
 
+##  🛠️ Website Speedtest report (before & after)
 
+<img width="1367" height="1104" src="screenshots\website-speedtest-before.png" />
 
-
+<img width="1362" height="1102" src="screenshots\website-speedtest-after.png" />
 
 
 ##  🛠️ Full technical report
