@@ -217,7 +217,7 @@ Full verification details:
 
 
 ##  🛠️ Full technical report
-👉 See `/docs/php-memory-incident-github-report.pdf`
+👉 See  [The full report](/docs/php-memory-incident-github-report.pdf)
 
 
 <br>
