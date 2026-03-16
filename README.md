@@ -28,6 +28,9 @@ Despite the server being configured for **512M**, WordPress consistently reporte
 - 60–80 second timeouts
 - Site Health showing incorrect memory values
 
+Full details:  
+👉 [The Problem](/docs/incident-report.md)
+
 Even after:
 
 - Editing `php.ini`
@@ -58,7 +61,7 @@ Additionally:
 The only reliable solution was to enforce the memory limit **inside WordPress**, at the MU‑plugin level.
 
 Full details:  
-👉 See `/docs/root-cause-analysis.md`
+👉 [Root Cause](/docs/root-cause-analysis.md)
 
 ---
 
@@ -91,6 +94,8 @@ wordpress-memory-limit-incident/
 <img width="984" height="1375" src="screenshots\architecture-diagram.png" />
 
 
+👉 See [Environment details](/docs/environment-details.md)
+
 ## 🛠️ The Solution: MU‑Plugin
 
 A custom MU-plugin was created to:
@@ -99,7 +104,8 @@ A custom MU-plugin was created to:
 - Reapply it at every major WordPress bootstrap stage  
 - Use priority `99999` to override all other plugins  
 
-📄 File: `mu-plugin/force-memory-limit.php`
+📄 [View Code](/mu-plugin/force-memory-limit.php)
+
 
 ```php
 <?php
@@ -141,7 +147,8 @@ add_action('wp_loaded', $force_memory, 99999);
 ## 🔍 Verification
 A test script was created to confirm the memory limit before and after WordPress loads.
 
-📄 File: `tests/memory-test.php`
+👉 See [View test code](tests/memory-test.php)
+
 
 **Expected output:**
 
@@ -149,9 +156,10 @@ A test script was created to confirm the memory limit before and after WordPress
 Before wp-load: 512M
 After wp-load: 512M
 ```
+👉 See [View troubleshooting steps](docs/troubleshooting-steps.md)
 
-Full verification details:
-👉 See `/docs/verification.md`
+Full verification details:<br>
+👉 See [View verification code](/docs/verification.md)
 
 ## 🖼️ Screenshots (Before & After)
 
